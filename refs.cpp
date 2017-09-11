@@ -13,9 +13,6 @@ int& test();
 
 int main()
 {
-	int * pointer = (int *)0x6;
-	std::cout << *pointer;
-
 	test() = 5;
 
 	cout << num;

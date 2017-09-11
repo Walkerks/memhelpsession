@@ -33,7 +33,7 @@ Person * makePerson(std::string name, unsigned int age) {
 }
 
 
-//
+
 int & badFunc() {
 	//create a locally scoped variable
 	int anewint = 5;
@@ -46,7 +46,6 @@ int & badFunc() {
 //How not to allocate memory for an array
 int * badArrayUse() {
 	int myarray[10];
-	//int * mymyarray = new int[10];
 	for (size_t i = 0; i < 10; i++) {
 		myarray[i] = 3;
 		std::cout << "Setting the memory address " << &myarray[i] << " with value " << myarray[i]  << std::endl;
@@ -92,7 +91,6 @@ int main() {
 
 
 	//Lets look at Mikes age again
-
 	std::cout << "age:" << myPerson->getAge() << std::endl;
 
 	return EXIT_SUCCESS;
