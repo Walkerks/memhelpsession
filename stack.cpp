@@ -9,8 +9,6 @@ public:
 		name = "";
 		age = 0;
 	}
-	//Person(Person &person) = delete ;
-	//Person & operator=(const Person&) = delete;
 	Person(std::string & name, unsigned int age) {
 		this->name = name;
 		this->age = age;
